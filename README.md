@@ -3,7 +3,7 @@ The repository documents how to perform entropic path sampling method to evaluat
 ![](Protocol.png)
 
 ## Entropic Path Sampling Tutorial
-We will use the program [PARENT](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.5b01217) to compute entropy from molecular dynamics trajectories. Since PARENT only takes in GROMACS input files (“.top” for topology file and “.xtc” for coordinate files), we will have to find way to convert xyz files to PARENT-readable files before doing the entropy analysis. The following instructions will help you
+We will use the program [PARENT](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.5b01217) (GitHub Repo: https://github.com/markusfleck/PARENT) to compute entropy from molecular dynamics trajectories. Since PARENT only takes in GROMACS input files (“.top” for topology file and “.xtc” for coordinate files), we will have to find way to convert xyz files to PARENT-readable files before doing the entropy analysis. The following instructions will help you
 1. Convert xyz files to GROMACS topology files
 2. Convert xyz files to GROMACS coordinate files
 3. Perform entropy computations using PARENT.
