@@ -1,0 +1,178 @@
+gw344.vampire
+Tue Aug  3 14:16:07 CDT 2021
+Working directory is /home/tremblmt/EntropicIntermediates/ParentAnalysis/PARENT-master
+make: Nothing to be done for `all'.
+
+
+
+
+
+    BAT_builder, a program to convert a molecular dynamics trajectory from Cartesian to internal bond-angle-torsion coordinates
+    Copyright (C) 2015  Markus Fleck (member of the laboratory of Bojan Zagrovic, University of Vienna)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License  version 3
+    as published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+    A scientific publication about this program has been released in the Journal of Chemical Theory and Computation:
+    "PARENT: A Parallel Software Suite for the Calculation of Configurational Entropy in Biomolecular Systems"
+    DOI: 10.1021/acs.jctc.5b01217
+
+    Please include this citation in works that publish results generated using
+    this program or any modifications of this program.
+
+
+
+
+
+Reading topology.
+Building BAT topology.
+Found 19 dihedrals/impropers.
+Writing .bat trajectory.
+Processed 54 frames.
+Finished writing trajectory.
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --cpus-per-proc, -cpus-per-proc, --cpus-per-rank, -cpus-per-rank
+    Replacement: --map-by <obj>:PE=N, default <obj>=NUMA
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_cpus_per_proc
+    Replacement: rmaps_base_mapping_policy=<obj>:PE=N, default <obj>=NUMA
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+[gw344.vampire:17278] MCW rank 0 bound to socket 0[core 0[hwt 0-1]], socket 0[core 1[hwt 0-1]], socket 0[core 2[hwt 0-1]], socket 0[core 3[hwt 0-1]]: [BB/BB/BB/BB/../..][../../../../../..]
+MPI PROCESS: 0, NODENAME: gw344.vampire, MAXTHREADS: 4, NUMTHREADS: 8
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 0
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 3
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 1
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 2
+
+
+
+
+
+    PARENT, a parallel program to compute the configurational entropy from a molecular dynamics trajectory
+    Copyright (C) 2015  Markus Fleck (member of the laboratory of Bojan Zagrovic, University of Vienna)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License  version 3
+    as published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+    A scientific publication about this program has been released in the Journal of Chemical Theory and Computation:
+    "PARENT: A Parallel Software Suite for the Calculation of Configurational Entropy in Biomolecular Systems"
+    DOI: 10.1021/acs.jctc.5b01217
+
+    Please include this citation in works that publish results generated using
+    this program or any modifications of this program.
+
+
+
+
+
+Reading file PARENT-master.bat .
+PARENT-master.bat specs:
+Precision: double #Atoms: 22 #Frames: 54
+Reading frame 0 and the following.
+READIN AND DISTRIBUTION COMPLETED FOR MPI PROCESS 0.
+CALCULATION OF EXTREMA COMPLETED FOR RANK 0.
+1D BONDS CALCULATION COMPLETED FOR MPI PROCESS 0.
+1D ANGLES CALCULATION COMPLETED FOR MPI PROCESS 0.
+1D DIHEDRALS CALCULATION COMPLETED FOR MPI PROCESS 0.
+2D BONDS-BONDS, BONDS-ANGLES AND BONDS-DIHEDRALS CALCULATION COMPLETED FOR MPI PROCESS 0.
+2D ANGLES-ANGLES AND ANGLES-DIHEDRALS CALCULATION COMPLETED FOR MPI PROCESS 0.
+2D DIHEDRALS-DIHEDRALS CALCULATION COMPLETED FOR MPI PROCESS 0.
+MPI PROCESS 0 FINISHED.
+Initialization + readin time: 0.0230951
+Calculation time: 0.053645
+Output time: 0.00147197
+Total execution time: 0.078212
+PROGRAM FINISHED SUCCESSFULLY.
+[gw344.vampire:17278] 1 more process has sent help message help-orte-rmaps-base.txt / deprecated
+[gw344.vampire:17278] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+--------------------------------------------------------------------------
+The following command line options and corresponding MCA parameter have
+been deprecated and replaced as follows:
+
+  Command line options:
+    Deprecated:  --cpus-per-proc, -cpus-per-proc, --cpus-per-rank, -cpus-per-rank
+    Replacement: --map-by <obj>:PE=N, default <obj>=NUMA
+
+  Equivalent MCA parameter:
+    Deprecated:  rmaps_base_cpus_per_proc
+    Replacement: rmaps_base_mapping_policy=<obj>:PE=N, default <obj>=NUMA
+
+The deprecated forms *will* disappear in a future version of Open MPI.
+Please update to the new syntax.
+--------------------------------------------------------------------------
+[gw344.vampire:17287] MCW rank 0 bound to socket 0[core 0[hwt 0-1]], socket 0[core 1[hwt 0-1]], socket 0[core 2[hwt 0-1]], socket 0[core 3[hwt 0-1]]: [BB/BB/BB/BB/../..][../../../../../..]
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 0
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 2
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 3
+Initiated process = 0 of NCPU=1 processes on machine=gw344.vampire, thread number 1
+
+
+
+
+
+    A program to calculate the MIST approximation of the configurational entropy from the output of the PARENT program
+    Copyright (C) 2015  Markus Fleck, as a representative of the working group of Bojan Zagrovic, University of Vienna
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License  version 3
+    as published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+    A scientific publication about this program has been released in the Journal of Chemical Theory and Computation:
+    "PARENT: A Parallel Software Suite for the Calculation of Configurational Entropy in Biomolecular Systems"
+    DOI: 10.1021/acs.jctc.5b01217
+
+    Please include this citation in works that publish results generated using
+    this program or any modifications of this program.
+
+
+
+
+
+MPI PROCESS 0 FINISHED.
+Initialization + readin time: 0.0219550966492
+Calculation time: 0.00230107435608
+Total execution time: 0.0242560743561
+PROGRAM FINISHED SUCCESSFULLY.
+[gw344.vampire:17287] 1 more process has sent help message help-orte-rmaps-base.txt / deprecated
+[gw344.vampire:17287] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+Tue Aug  3 14:16:08 CDT 2021
