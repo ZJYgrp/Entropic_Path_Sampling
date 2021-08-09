@@ -20,7 +20,7 @@ We will use the program [PARENT](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.5
 
 3. Rename .frcmod (force field) file
 
-        mv ANTECHAMBER.FRCMOD dimerization-low-hp-C2-opt.frcmod 
+        mv ANTECHAMBER.frcmod dimerization-low-hp-C2-opt.frcmod 
 
 4. Generate tleap ([AMBER](http://ambermd.org/GetAmber.php) input) file
 
