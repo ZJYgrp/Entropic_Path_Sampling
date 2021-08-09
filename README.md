@@ -57,7 +57,7 @@ We will use the program [PARENT](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.5
     - Adjust the bond lengths on lines 26-27 to select the subsection in question.
     - Refer to cycloaddition_TS_irc_rev.log for the intrinsic reaction coordinate (IRC) calculation that bridges cycloaddtion TS1 to Cope TS2, and to cope_TS_irc_rev.log for the IRC that bridges Cope TS2 to the product with formation of bond (4,14).
 
-### Section 3 - Analysis with PARENT
+### Section 3 - Analysis with PARENT (Code adopted from https://github.com/markusfleck/PARENT)
 1. Convert the subsectioned .xyz files to .xtc
 
         python3 xyz2xtc.py
