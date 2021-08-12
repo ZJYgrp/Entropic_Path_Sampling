@@ -34,7 +34,7 @@ dele_path = './TDD_r2p_1_Subsection/'
 
 file_list = os.listdir(orign_path)
 traj_file = orign_path + 'r_p_total_dele_P1.xyz'
-traj_dele = dele_path  + str(bond_len_max) + "_" + str(bond_len_max) + "_bondlength.xyz"
+traj_dele = dele_path  + str(bond_len_max) + "_" + str(bond_len_min) + "_bondlength.xyz"
     #print(traj_file)
 with open(traj_file,'r') as fr:
     for line in fr:
@@ -71,7 +71,7 @@ with open(traj_dele ,'w') as fw:
 orign_path = './TDD_r2p_1_Subsection/'
 file_list = os.listdir(orign_path)
 flag = 0
-traj_file= orign_path +  str(bond_len_max) + "_" + str(bond_len_max) + "_bondlength.xyz"
+traj_file= orign_path +  str(bond_len_max) + "_" + str(bond_len_min) + "_bondlength.xyz"
 with open(traj_file,'r') as fr:
     lines_list = fr.readlines()
     file_len = len(lines_list)
