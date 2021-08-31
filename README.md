@@ -81,3 +81,4 @@ We will use the program [PARENT](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.5
 6. Run entropy_anal.py - total_outputs.xls and D1_D2_conf.txt are the analysis files.(the units of numbers in output files are k<sub>b</sub>)
 
         python3 entropy_anal.py
+        python entropy_anal.py
