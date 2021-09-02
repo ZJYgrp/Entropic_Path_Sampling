@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 # This script should be revised to an object-oriented program, which defines TS extraction class, trajectories classfication class, etc.
 import numpy as np
 import sys
