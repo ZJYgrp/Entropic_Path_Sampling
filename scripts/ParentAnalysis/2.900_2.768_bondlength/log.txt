@@ -1,7 +1,17 @@
 tc6000
-2021年 09月 02日 星期四 19:57:05 CST
+2021年 09月 02日 星期四 19:54:45 CST
 Working directory is /public/home/QZX_HG/qzx/Dynamics/Software/Parent/test/PARENT-master
-make: 对“all”无需做任何事。
+g++ -c src/util/io/io_binary.cpp -o obj/io_binary.o -Wall
+g++ -c src/util/io/io_text.cpp -o obj/io_text.o -Wall
+ld -r obj/io_binary.o obj/io_text.o -o obj/io.o
+gcc -c src/util/io/xdrfile/xdrfile.c -o obj/xdrfile.o
+gcc -c src/util/io/xdrfile/xdrfile_xtc.c -o obj/xdrfile_xtc.o
+g++ src/BAT_builder/bat.cpp obj/xdrfile.o  obj/xdrfile_xtc.o obj/io.o -o exec/BAT_builder.x -Wall
+mpiCC -fopenmp src/PARENT/PARENT.cpp obj/io.o -o exec/PARENT.x -Wall
+g++ -c src/util/util.cpp -o obj/util.o -Wall
+mpiCC -fopenmp src/process_output/get_PAR_MIST.cpp  obj/io.o obj/util.o -o exec/get_PAR_MIST.x -Wall
+g++ src/process_output/get_PAR_info.cpp obj/io.o -o exec/get_PAR_info.x -Wall
+g++ src/process_output/get_PAR_MIE.cpp obj/io.o obj/util.o -o exec/get_PAR_MIE.x -Wall
 
 
 
@@ -39,7 +49,7 @@ Reading topology.
 Building BAT topology.
 Found 19 dihedrals/impropers.
 Writing .bat trajectory.
-Processed 30 frames.
+Processed 12 frames.
 Finished writing trajectory.
 --------------------------------------------------------------------------
 The following command line options and corresponding MCA parameter have
@@ -56,15 +66,15 @@ been deprecated and replaced as follows:
 The deprecated forms *will* disappear in a future version of Open MPI.
 Please update to the new syntax.
 --------------------------------------------------------------------------
-[tc6000:34461] SETTING BINDING TO CORE
-[tc6000:34461] MCW rank 0 bound to socket 0[core 0[hwt 0-1]], socket 0[core 1[hwt 0-1]], socket 0[core 2[hwt 0-1]], socket 0[core 3[hwt 0-1]]: [BB/BB/BB/BB/../../../../../..][../../../../../../../../../..]
-[tc6000:34461] 1 more process has sent help message help-orte-rmaps-base.txt / deprecated
-[tc6000:34461] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[tc6000:21123] SETTING BINDING TO CORE
+[tc6000:21123] MCW rank 0 bound to socket 0[core 0[hwt 0-1]], socket 0[core 1[hwt 0-1]], socket 0[core 2[hwt 0-1]], socket 0[core 3[hwt 0-1]]: [BB/BB/BB/BB/../../../../../..][../../../../../../../../../..]
+[tc6000:21123] 1 more process has sent help message help-orte-rmaps-base.txt / deprecated
+[tc6000:21123] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
 MPI PROCESS: 0, NODENAME: tc6000, MAXTHREADS: 4, NUMTHREADS: 8
 Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 3
+Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 1
 Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 2
 Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 0
-Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 1
 
 
 
@@ -100,7 +110,7 @@ Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 1
 
 Reading file PARENT-master.bat .
 PARENT-master.bat specs:
-Precision: double #Atoms: 22 #Frames: 30
+Precision: double #Atoms: 22 #Frames: 12
 Reading frame 0 and the following.
 READIN AND DISTRIBUTION COMPLETED FOR MPI PROCESS 0.
 CALCULATION OF EXTREMA COMPLETED FOR RANK 0.
@@ -111,10 +121,10 @@ CALCULATION OF EXTREMA COMPLETED FOR RANK 0.
 2D ANGLES-ANGLES AND ANGLES-DIHEDRALS CALCULATION COMPLETED FOR MPI PROCESS 0.
 2D DIHEDRALS-DIHEDRALS CALCULATION COMPLETED FOR MPI PROCESS 0.
 MPI PROCESS 0 FINISHED.
-Initialization + readin time: 8.41912
-Calculation time: 0.009405
-Output time: 0.000129
-Total execution time: 8.42866
+Initialization + readin time: 3.44417
+Calculation time: 0.00561
+Output time: 8.9e-05
+Total execution time: 3.44987
 PROGRAM FINISHED SUCCESSFULLY.
 --------------------------------------------------------------------------
 The following command line options and corresponding MCA parameter have
@@ -131,12 +141,12 @@ been deprecated and replaced as follows:
 The deprecated forms *will* disappear in a future version of Open MPI.
 Please update to the new syntax.
 --------------------------------------------------------------------------
-[tc6000:00732] SETTING BINDING TO CORE
-[tc6000:00732] MCW rank 0 bound to socket 0[core 0[hwt 0-1]], socket 0[core 1[hwt 0-1]], socket 0[core 2[hwt 0-1]], socket 0[core 3[hwt 0-1]]: [BB/BB/BB/BB/../../../../../..][../../../../../../../../../..]
+[tc6000:23072] SETTING BINDING TO CORE
+[tc6000:23072] MCW rank 0 bound to socket 0[core 0[hwt 0-1]], socket 0[core 1[hwt 0-1]], socket 0[core 2[hwt 0-1]], socket 0[core 3[hwt 0-1]]: [BB/BB/BB/BB/../../../../../..][../../../../../../../../../..]
 Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 0
-Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 1
-Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 2
 Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 3
+Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 2
+Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 1
 
 
 
@@ -171,10 +181,10 @@ Initiated process = 0 of NCPU=1 processes on machine=tc6000, thread number 3
 
 
 MPI PROCESS 0 FINISHED.
-Initialization + readin time: 0.067803
-Calculation time: 0.001439
-Total execution time: 0.069242
+Initialization + readin time: 0.07611
+Calculation time: 0.001387
+Total execution time: 0.077497
 PROGRAM FINISHED SUCCESSFULLY.
-[tc6000:00732] 1 more process has sent help message help-orte-rmaps-base.txt / deprecated
-[tc6000:00732] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-2021年 09月 02日 星期四 19:57:34 CST
+[tc6000:23072] 1 more process has sent help message help-orte-rmaps-base.txt / deprecated
+[tc6000:23072] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+2021年 09月 02日 星期四 19:55:36 CST

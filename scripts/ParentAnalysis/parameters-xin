@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the GROMACS .xtc and .top input files relative to the top directory
-TRJ="test_system/2.90_2.84_bondlength.xtc"
+TRJ="test_system/2.768_2.636_bondlength.xtc"
 TOP="test_system/dimerization-low-hp-C2-opt.top"
 
 #Optional: Specify the index file and the group names for which (leave blank if not wanted)
