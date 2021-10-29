@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[12]:
-
-
 import os
 import math
 #bond(6,13): common bond that always forms in product A and B   
