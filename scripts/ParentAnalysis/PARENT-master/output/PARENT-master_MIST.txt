@@ -1,0 +1,69 @@
+b b 1 5   MI: 2.86029051281   left to process: 59
+b b 5 16   MI: 3.38151888536   left to process: 58
+b b 16 7   MI: 3.31864240666   left to process: 57
+b a 5 9   MI: 3.31864240666   left to process: 56
+b a 16 3   MI: 3.30120080187   left to process: 55
+b a 16 10   MI: 3.28375919708   left to process: 54
+b a 16 14   MI: 3.25576592796   left to process: 53
+b a 5 19   MI: 3.25576592796   left to process: 52
+b b 16 10   MI: 3.23832432316   left to process: 51
+b a 16 15   MI: 3.23832432316   left to process: 50
+b b 5 14   MI: 3.23832432316   left to process: 49
+b d 5 9   MI: 3.23832432316   left to process: 48
+b d 16 18   MI: 3.23524200274   left to process: 47
+b a 16 16   MI: 3.22088271837   left to process: 46
+b a 16 6   MI: 3.22088271837   left to process: 45
+b b 5 13   MI: 3.20955611592   left to process: 44
+b b 16 9   MI: 3.19288944925   left to process: 43
+b b 16 19   MI: 3.19288944925   left to process: 42
+b a 16 20   MI: 3.19288944925   left to process: 41
+b d 16 7   MI: 3.17544784446   left to process: 40
+b a 16 12   MI: 3.17544784446   left to process: 39
+b d 16 8   MI: 3.15800623967   left to process: 38
+b d 16 10   MI: 3.15800623967   left to process: 37
+b b 5 11   MI: 3.15800623967   left to process: 36
+b d 5 5   MI: 3.15492391924   left to process: 35
+b d 16 13   MI: 3.13001297055   left to process: 34
+b d 16 1   MI: 3.12923803242   left to process: 33
+b d 16 4   MI: 3.12923803242   left to process: 32
+b d 16 14   MI: 3.12923803242   left to process: 31
+b d 16 19   MI: 3.11257136576   left to process: 30
+b a 16 11   MI: 3.09512976096   left to process: 29
+b a 16 4   MI: 3.09512976096   left to process: 28
+b b 5 17   MI: 3.09512976096   left to process: 27
+a a 14 13   MI: 3.09204744054   left to process: 26
+b b 16 15   MI: 3.06713649184   left to process: 25
+b a 16 8   MI: 3.03759334647   left to process: 24
+b a 16 18   MI: 3.03225328226   left to process: 23
+b b 16 20   MI: 3.02917096183   left to process: 22
+b b 16 6   MI: 3.01481167747   left to process: 21
+b d 16 6   MI: 3.00348507501   left to process: 20
+b a 16 1   MI: 2.98681840835   left to process: 19
+b d 7 15   MI: 2.98604347022   left to process: 18
+b d 5 2   MI: 2.98604347022   left to process: 17
+b d 16 11   MI: 2.96937680356   left to process: 16
+a d 9 12   MI: 2.94060859631   left to process: 15
+a a 8 2   MI: 2.93983365818   left to process: 14
+a a 10 7   MI: 2.93141127354   left to process: 13
+b a 16 17   MI: 2.92316699152   left to process: 12
+b b 16 21   MI: 2.88905872006   left to process: 11
+b d 16 17   MI: 2.84284890802   left to process: 10
+b b 16 12   MI: 2.8420739699   left to process: 9
+b a 16 5   MI: 2.83152230557   left to process: 8
+b b 5 4   MI: 2.79741403411   left to process: 7
+b b 7 18   MI: 2.79129903177   left to process: 6
+b b 16 2   MI: 2.77385742698   left to process: 5
+a d 10 3   MI: 2.76632101249   left to process: 4
+a b 10 3   MI: 2.6791304206   left to process: 3
+b b 16 8   MI: 2.65344453378   left to process: 2
+a d 13 16   MI: 2.59342263438   left to process: 1
+TOTAL 1D BONDS ENTROPY = -35.1908738589
+TOTAL 1D ANGLES ENTROPY = -40.9374626747
+TOTAL 1D DIHEDRALS ENTROPY = -29.1395352944
+TOTAL 2D BONDS-BONDS MUTUAL INFORMATION = 57.743838314
+TOTAL 2D BONDS-ANGLES MUTUAL INFORMATION = 56.1443055918
+TOTAL 2D BONDS-DIHEDRALS MUTUAL INFORMATION = 49.5380467295
+TOTAL 2D ANGLES-ANGLES MUTUAL INFORMATION = 8.96329237226
+TOTAL 2D ANGLES-DIHEDRALS MUTUAL INFORMATION = 8.30035224318
+TOTAL 2D DIHEDRALS-DIHEDRALS MUTUAL INFORMATION = 0
+TOTAL CONFIGURATIONAL ENTROPY = -285.957707079
