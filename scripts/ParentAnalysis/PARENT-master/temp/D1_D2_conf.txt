@@ -1,8 +1,0 @@
-2.84_2.73_bondlength_MIST.txt D1_entropy_total -78.34 D2_MI_total 180.59 conf_entropy_total -258.93
-2.90_2.84_bondlength_MIST.txt D1_entropy_total -214.23 D2_MI_total 121.01 conf_entropy_total -335.24
-PARENT-master D1_entropy_total -78.34 D2_MI_total 180.59 conf_entropy_total -258.93
-1 D1_entropy_total 0.00 D2_MI_total 0.00 conf_entropy_total 0.00
-PARENT-master D1_entropy_total -214.23 D2_MI_total 121.01 conf_entropy_total -335.24
-PARENT-master D1_entropy_total -78.34 D2_MI_total 180.59 conf_entropy_total -258.93
-1 D1_entropy_total 0.00 D2_MI_total 0.00 conf_entropy_total 0.00
-PARENT-master D1_entropy_total -214.23 D2_MI_total 121.01 conf_entropy_total -335.24

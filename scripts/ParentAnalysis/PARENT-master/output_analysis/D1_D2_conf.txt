@@ -1,6 +1,0 @@
-PARENT-master D1_entopy_total -78.34 D2_MI_total 180.59 conf_entropy_total -258.93
-PARENT-master D1_entopy_total -214.23 D2_MI_total 121.01 conf_entropy_total -335.24
-PARENT-master D1_entopy_total -78.34 D2_MI_total 180.59 conf_entropy_total -258.93
-PARENT-master D1_entopy_total -214.23 D2_MI_total 121.01 conf_entropy_total -335.24
-PARENT-master D1_entopy_total -78.34 D2_MI_total 180.59 conf_entropy_total -258.93
-PARENT-master D1_entopy_total -214.23 D2_MI_total 121.01 conf_entropy_total -335.24
