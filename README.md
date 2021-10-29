@@ -16,7 +16,7 @@ We will use the program [PARENT](https://pubs.acs.org/doi/abs/10.1021/acs.jctc.5
 
 2. Replace openbabel's default AMBER99 labels with GAFF labels using sed
 
-        sed -i -e "s/C.3     1  LIG1/c3      1  LIG1/g" -e "s/H       1/hc      1/g" -e "s/S.O2    1  LIG1/s2      1  LIG1/g" -e "s/O.3     1  LIG1/o       1  LIG1/g" -e "s/O.2     1  LIG1/os      1  LIG1/g" -e "s/C.2     1  LIG1/c2      1  LIG1/g" dimerization-low-hp-C2-opt.mol2 
+        sed -i -e "s/C.3     1  LIG1/c3      1  LIG1/g" -e "s/H       1/hc      1/g" -e "s/S.O2    1  LIG1/s2      1  LIG1/g" -e "s/C.2     1  LIG1/c2      1  LIG1/g" dimerization-low-hp-C2-opt.mol2 
 
 3. Rename .frcmod (force field) file
 
