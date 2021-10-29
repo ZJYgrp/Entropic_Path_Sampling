@@ -41,10 +41,3 @@ for file in file_list:
     with open(traj_dele ,'w') as fw:
         for chunk in every_point_list:
             fw.writelines(chunk)  
-
-
-# In[ ]:
-
-
-
-
